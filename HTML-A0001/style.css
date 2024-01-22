@@ -1,0 +1,13 @@
+html {
+    font-family: sans-serif ;
+    background-color: azure;
+   
+}
+img{
+    background-color: rgb(233, 255, 247);
+    border: solid 2px black;
+    border-radius: 10px;
+}
+div{
+    text-align: center;
+}
