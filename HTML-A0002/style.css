@@ -1,0 +1,15 @@
+.pai {
+  background-color: aqua;
+  width: 100vw;
+  height: 500px;
+}
+.filho {
+  margin: 50px;
+  padding: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+}

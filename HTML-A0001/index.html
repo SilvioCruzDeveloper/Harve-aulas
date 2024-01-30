@@ -1,25 +1,78 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.
-    0"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
-    <title>Minha pagina</title>
   </head>
   <body>
-    <section>
-      <div>
-        <img
-          src="https://media.tenor.com/N5fU8iyU9F4AAAAj/shigure-ui-dance.gif"
-          alt="gif"
-        />
-        <h1>---------- Meu titulo ----------</h1>
-        <p>--------- Meu paragrafo ---------</p>
+    <main>
+      <header>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="contatos.html">Contatos</a></li>
+        </ul>
+      </header>
+      <!-- Jumbotron/Hero Section -->
+      <div class="jumbotron">
+        <h1 class="display-4">Loja online</h1>
+
+        <p class="lead">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
       </div>
-    </section>
+
+      <!-- Produto Section -->
+      <section id="produto" class="container">
+        <div class="row">
+          <div class="col-md-6"></div>
+          <div class="col-md-6">
+            <h3>produto</h3>
+            <p class="lead">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </p>
+            <p class="lead">R$: 10,00</p>
+            <a href="#" class="btn btn-primary">Saiba Mais</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mapa Section -->
+      <section id="mapa" class="container mt-5">
+        <h2>Localização</h2>
+        <!-- Substitua as coordenadas abaixo pelas coordenadas reais do seu estabelecimento -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.678901234567!2d-122.4194155!3d37.7749295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d6b83b3fd%3A0x1234567890abcdef!2sExample%20Location!5e0!3m2!1sen!2sus!4v1578185421128!5m2!1sen!2sus"
+          width="80%"
+          height="350"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+        ></iframe>
+      </section>
+
+      <!-- Rodapé -->
+      <footer class="footer bg-dark text-light text-center py-3">
+        <p>&copy; Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </footer>
+
+      <!-- Scripts do Bootstrap (jQuery e Popper.js são necessários para funcionalidades como dropdowns) -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </main>
   </body>
 </html>

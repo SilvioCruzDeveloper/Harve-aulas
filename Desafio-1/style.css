@@ -1,0 +1,151 @@
+/* Reset de estilos para garantir uma base consistente em todos os navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo global para o corpo da página */
+body {
+  margin: 5%;
+  border: 3px solid #000;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Estilo para a barra de navegação */
+.nav1 {
+  background-color: #7cc9fc;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+.navPerfil {
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilo para a imagem do perfil */
+.perfil {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+/* Estilo para a seção de texto na barra de navegação */
+.navtxt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Estilo para as informações de perfil */
+.txt {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Estilo para as informações de dados */
+.dados p {
+  margin-right: 20px;
+  margin-bottom: 3px; /* Ajuste para margin-bottom em vez de margin para melhor controle */
+  text-align: right; /* Alinhamento à direita */
+}
+
+/* Estilo para a seção de streak e badges */
+.seg {
+  display: flex;
+}
+.seg p {
+  margin-right: 20px;
+}
+
+/* Estilo para o título da página */
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Estilo Do meio */
+
+.nav2 {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.lista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5px; /* Ajuste para padding em vez de padding individual */
+  margin: 0 1px; /* Ajuste para margin em vez de margin individual */
+  width: 100%;
+}
+.quadro {
+  font-size: 20px;
+  display: flex;
+  width: 100%;
+}
+.bor,
+.borc,
+.borb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid black;
+  padding: 0 5px; /* Ajuste para padding em vez de padding individual */
+  margin: 0;
+  width: 100%;
+}
+
+.borc {
+  margin-right: 30%; /* Ajuste para margin-right em vez de margin */
+}
+
+.borb {
+  border: 2px solid black;
+  margin-left: 30%; /* Ajuste para margin-left em vez de margin */
+}
+.nav3 {
+  display: flex;
+  margin: 5% 0% 5% 0%;
+  justify-content: space-around;
+  align-items: center;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  width: 30%;
+  height: 190px;
+}
+
+.box1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  width: 70%;
+  height: 60%;
+}
+.nav4 {
+  display: flex;
+  margin: 5% 0% 5% 0%;
+  justify-content: space-evenly;
+  align-items: end;
+  height: 100px;
+}
+.pe {
+  margin: 20px 10px 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  width: 70%;
+  height: 60%;
+}
