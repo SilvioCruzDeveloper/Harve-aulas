@@ -1,0 +1,13 @@
+.container {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+img {
+  margin: 5% 0% 0% 0%;
+  padding: 12% 5%;
+}
+.container2{
+  padding: 8%;
+}

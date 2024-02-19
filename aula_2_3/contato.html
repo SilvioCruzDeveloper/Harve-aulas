@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <title>Minha Loja</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/conatato.css" />
+  </head>
+  <body>
+    <!-- MENU -->
+    <div class="cabecalho">
+      <div class="navbar">
+        <h1>Minha Loja</h1>
+        <a href="index.html">Home</a>
+        <a href="produtos.html">Produtos</a>
+        <a class="ativo" href="contato.html">Contato</a>
+      </div>
+
+      <div class="sair">
+        <a href="index.html">SAIR</a>
+      </div>
+    </div>
+
+    <div class="mainConatato">
+      <h2>Formulario de contatos</h2>
+      <form class="form">
+        <label for="text">Texto:</label>
+        <input
+          type="text"
+          id="text"
+          name="text"
+          placeholder="Digite seu texto"
+          required
+        />
+
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="exemplo@email.com"
+          required
+        />
+
+        <label for="number">Número:</label>
+        <input
+          type="number"
+          id="number"
+          name="number"
+          min="1"
+          max="100"
+          required
+        />
+
+        <label for="date">Data:</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="checkbox">Checkbox:</label>
+        <input type="checkbox" id="checkbox" name="checkbox" value="check" />
+
+        <label for="radio1">Opção 1:</label>
+        <input type="radio" id="radio1" name="radio" value="option1" />
+
+        <label for="radio2">Opção 2:</label>
+        <input type="radio" id="radio2" name="radio" value="option2" />
+
+        <label for="select">Selecione:</label>
+        <select id="select" name="select" required>
+          <option value="" disabled selected>Selecione uma opção</option>
+          <option value="option1">Opção 1</option>
+          <option value="option2">Opção 2</option>
+          <option value="option3">Opção 3</option>
+        </select>
+
+        <label for="textarea">Área de Texto:</label>
+        <textarea
+          id="textarea"
+          name="textarea"
+          rows="4"
+          placeholder="Digite seu texto"
+          required
+        ></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+
+    <footer>
+      <p>&copy; 2023 Minha Loja. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>
