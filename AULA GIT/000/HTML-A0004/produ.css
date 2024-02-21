@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  margin: 1px;
+  padding: 1px;
+}
+.ico img {
+  width: auto;
+}
+img {
+  width: 50px;
+  height: auto;
+}
+
+.titulo {
+  text-align: center;
+  margin: 3px;
+  padding: 3px;
+}
+.produto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #737373;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 30px;
+  text-align: center;
+  width: 200px;
+  display: inline-block;
+}
+
+.produto img {
+  max-width: 100%;
+  height: auto;
+}
+.produto:hover {
+  transform: scale(1.02);
+}
+#card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#card a {
+  font-size: 16px;
+  color: black;
+}
+iframe {
+  margin: auto;
+  padding: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px black;
+}

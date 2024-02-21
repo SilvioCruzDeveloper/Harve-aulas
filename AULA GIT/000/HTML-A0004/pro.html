@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <!-- Carrinho -->
+        <div class="nav-item">
+          <a class="nav-link" href="#" id="cart-icon">
+            <img src="ico/cart.svg" alt="Carrinho" />
+            <span id="cart-count">0</span>
+            <button onclick="clearCart()">linpar carrinho</button>
+          </a>
+        </div>
+        <div class="titulo"><a class="navbar-brand" href="#">Produtos </a></div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                ><div class="ico">
+                  <img src="ico/house.svg" alt="Home" /><label class="mx-1"
+                    >Home</label
+                  >
+                </div></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Pro.html"
+                ><div class="ico">
+                  <img src="ico/cart.svg" alt="Protudos" /><label class="mx-1"
+                    >Produtos</label
+                  >
+                </div></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contato.html"
+                ><div class="ico">
+                  <img src="ico/telephone.svg" alt="Contatos" /><label
+                    class="mx-1"
+                    >Contatos</label
+                  >
+                </div></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="product-showcase">
+      <!-- Produtos -->
+      <div class="product">
+        <img src="Produto2.png" alt="Achocolatado 1" />
+        <h3>Achocolatado Premium</h3>
+        <p>Delicioso achocolatado premium para os amantes de chocolate.</p>
+        <span class="price">R$ <span id="price1"> 19.99</span> </span>
+        <a href="#" class="btn" onclick="addToCart(1)">Comprar</a>
+      </div>
+      <div class="product">
+        <img src="Produto1.png" alt="Achocolatado 1" />
+        <h3>Achocolatado Premium</h3>
+        <p>Delicioso achocolatado premium para os amantes de chocolate.</p>
+        <span class="price">R$ <span id="price1"> 29.99</span> </span>
+        <a href="#" class="btn" onclick="addToCart(1)">Comprar</a>
+      </div>
+
+      <!-- Adicione os outros produtos aqui -->
+    </section>
+    <!-- Carrinho -->
+    <div class="container">
+      <div id="cart" style="display: none">
+        <h2>Carrinho de Compras</h2>
+        <ul id="cart-items">
+          <!-- Itens do Carrinho serão inseridos aqui -->
+        </ul>
+        <p>Total: R$ <span id="total">0.00</span></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

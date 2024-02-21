@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho de Compras</title>
+    <style>
+      /* Estilos CSS */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Carrinho de Compras</h1>
+      <div id="cart-items">
+        <!-- Os itens do carrinho serão inseridos aqui -->
+      </div>
+    </div>
+    <script>
+      // Função para exibir os itens do carrinho
+      function showCart() {
+        const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+        const cartItemsContainer = document.getElementById("cart-items");
+        cartItemsContainer.innerHTML = "";
+
+        cartItems.forEach((item) => {
+          const cartItemDiv = document.createElement("div");
+          cartItemDiv.classList.add("cart-item");
+
+          cartItemDiv.innerHTML = `
+                    <img src="${item.image}" alt="${item.name}">
+                    <div>
+                        <h3>${item.name}</h3>
+                        <p>Preço: R$ <span>${item.price.toFixed(2)}</span></p>
+                    </div>
+                `;
+
+          cartItemsContainer.appendChild(cartItemDiv);
+        });
+      }
+
+      // Exibir os itens do carrinho ao carregar a página
+      document.addEventListener("DOMContentLoaded", showCart);
+
+      // Adicionar evento de escuta para atualizar o carrinho quando a página recebe uma mensagem de outro lugar
+      window.addEventListener("message", (event) => {
+        if (event.data && event.data.action === "addToCart") {
+          // Adicionar o produto ao carrinho
+          const product = event.data.product;
+          let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+          cartItems.push(product);
+          localStorage.setItem("cart", JSON.stringify(cartItems));
+
+          // Atualizar a exibição do carrinho
+          showCart();
+        }
+      });
+    </script>
+  </body>
+</html>
