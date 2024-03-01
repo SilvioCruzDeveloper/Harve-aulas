@@ -7,6 +7,7 @@ function addToCart(productId, price) {
 
   // Adicionar o produto ao carrinho
   cartItems.push(productId);
+  ;
 
   // Salvar os dados atualizados no armazenamento local
   localStorage.setItem("cartItems", JSON.stringify(cartItems));

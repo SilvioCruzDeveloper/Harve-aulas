@@ -21,7 +21,6 @@
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 2rem;
-  
 }
 
 .product {
@@ -70,19 +69,32 @@
 }
 
 .price {
- 
   font-weight: bold;
   color: #333;
 }
-.btn{
+.btn {
   border: solid 1px #333;
 }
-.btn:hover{
- background-color: #33333321;
+.btn:hover {
+  background-color: #33333321;
 }
-.produtos{
+.produtos {
   margin: 1%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+.car {
+  font-family: sans-serif;
+  font-size: 10px;
+  border: 1px solid #9090904f;
+  border-radius: 5px;
+  color: #33333368;
+}
+.car:hover {
+  background-color: #9393934d;
+}
+.car:active{
+  background-color: #33333321;
+  
 }

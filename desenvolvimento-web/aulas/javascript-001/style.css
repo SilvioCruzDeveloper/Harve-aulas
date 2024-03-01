@@ -1,0 +1,83 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos para o body */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+/* Estilos para o título */
+.title {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para os parágrafos */
+p {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.134);
+}
+
+/* Estilos para os parágrafos ao passar o mouse */
+p:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Cores de fundo padrão */
+#feedback-nota-01 {
+  background-color: #eeeeee;
+}
+
+#feedback-nota-02 {
+  background-color: #f0f0f0;
+}
+
+#feedback-nota-03 {
+  background-color: #e9e9e9;
+}
+
+#feedback-nota-04 {
+  background-color: #cbcbcb;
+}
+
+/* Gradiente ao passar o mouse */
+#feedback-nota-01:hover {
+  background: linear-gradient(135deg, #eeeeee, #f9f9f985);
+}
+
+#feedback-nota-02:hover {
+  background: linear-gradient(135deg, #f0f0f0, #f0f0f084);
+}
+
+#feedback-nota-03:hover {
+  background: linear-gradient(135deg, #e9e9e9, #e9e9e980);
+}
+
+#feedback-nota-04:hover {
+  background: linear-gradient(135deg, #cbcbcb, #cbcbcb7b);
+}
+
+/* Estilo para o link no footer */
+.footer-link {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #0056b3;
+}
